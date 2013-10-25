@@ -11,6 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20131025221729) do
+
+  create_table "members", force: true do |t|
+    t.string   "name"
+    t.integer  "member_number"
+    t.string   "email"
+    t.string   "phone"
+    t.datetime "birthday"
+    t.boolean  "paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
