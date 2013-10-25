@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131025221729) do
+ActiveRecord::Schema.define(version: 20131025233428) do
+
+  create_table "courses", force: true do |t|
+    t.string "name"
+    t.string "acronym"
+  end
+
+  create_table "locations", force: true do |t|
+    t.string "name"
+  end
 
   create_table "members", force: true do |t|
     t.string   "name"
@@ -22,6 +31,14 @@ ActiveRecord::Schema.define(version: 20131025221729) do
     t.boolean  "paid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "student_number"
+    t.integer  "location_id"
+    t.integer  "course_id"
+    t.integer  "responsible_id"
   end
+
+  add_index "members", ["course_id"], name: "index_members_on_course_id"
+  add_index "members", ["location_id"], name: "index_members_on_location_id"
+  add_index "members", ["responsible_id"], name: "index_members_on_responsible_id"
 
 end
