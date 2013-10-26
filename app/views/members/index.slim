@@ -1,19 +1,24 @@
-h1 Membros
+h2.title Membros
 
-table class="display dataTable" border="1" id="example"
+table#example.table.table-condensed.table-hover
   thead
     tr 
+      th Nº de Sócio
       th Nome
-      th Número de Sócio
+      th Curso
+      th Nº Mecanográfico
       th Email
-      th Telemóvel
+      th Pago
+
   tbody
     - @members.each do |member|
       tr
-        td = link_to member.name, member_path(member)
-        td = member.member_number
+        td = link_to member.member_number, member_path(member)
+        td = member.name
+        td = nil
+        td = member.student_number
         td = member.email
-        td = member.phone
+        td = member.paid?
 
 javascript:
   $(document).ready(function(){
