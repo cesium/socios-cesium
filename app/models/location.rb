@@ -1,5 +1,5 @@
 class Location < ActiveRecord::Base
-	has_many :members
+  has_many :members
 
-	validates :name, presence: true
+  validates :name, presence: true
 end
