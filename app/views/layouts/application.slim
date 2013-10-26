@@ -1,0 +1,9 @@
+= render "layouts/doctype"
+= render "layouts/head"
+
+body
+  #container
+    = render "layouts/header"
+    #content.selfclear.wrapper
+      #main
+        == yield
