@@ -1,0 +1,58 @@
+span.options
+  color: #333
+  @include text-shadow(1px, 1px, 0px, #EEE)
+  @include enable-ie-css3
+
+  a:hover
+    color: #FFF
+    @include text-shadow(1px, 1px, 0px, #000)
+    @include enable-ie-css3
+
+
+span.site-title
+  color: #888
+
+
+div#menu
+  font-size: 14px
+
+  a
+    color: #999
+    @include text-shadow(1px, 1px, 0, #FFF)
+    @include transition(color, 0.3s, ease-in-out, 0s)
+    @include enable-ie-css3
+
+  a:hover
+    color: $default-color
+
+  a.current
+    color: #444
+    border-bottom: 3px solid $default-color
+
+  a.current:hover
+    color: #444
+
+
+div#right-sidebar
+
+  h2.title
+    color: #FFF
+    font-size: 14px
+    @include text-shadow(1px, 1px, 0, #000)
+    @include enable-ie-css3
+
+  li
+    color: $default-color
+
+
+div#footer
+  color: #444
+  text-align: center
+  @include text-shadow(1px, 1px, 0, #FFF)
+  @include enable-ie-css3
+
+  a
+    font-weight: bold
+
+  a:hover
+    color: $default-color

@@ -1,0 +1,481 @@
+body
+  background-color: $backend-background-color
+
+
+h2
+  margin: 0 0 15px
+
+  a:hover
+    border-bottom: 3px solid $default-color
+
+
+div#container
+  min-width: 960px
+
+
+div#main
+  float: left
+  width: 71%
+
+  div.content
+    display: inline-block
+    width: 100%
+
+    ul.buttons
+      margin: 20px 0
+
+    div.inner
+      display: block
+      margin: 20px
+
+      dl.list
+        margin: 0 15px
+
+
+div#main > div.block
+  background-color: #FFF
+  @include box-shadow(2px, 2px, 4px, #888)
+  @include round-corners(10px, 10px, 10px, 10px)
+  @include enable-ie-css3
+
+
+div#main-navigation
+
+  li
+    @include round-corners(10px, 10px, 0, 0)
+    @include enable-ie-css3
+
+  ul li
+    background-color: #ADADAD
+    float: left
+    margin: 0 5px 0 0
+
+    a
+      padding: 8px 15px
+
+  ul li.active
+    background-color: #FFF
+    @include linear-gradient(#FFF, $backend-background-color)
+    @include enable-ie-css3
+
+
+div.secondary-navigation
+  background-image: url("/images/backend/boxbar-background.png")
+  @include round-corners(10px, 10px, 0, 0)
+  @include enable-ie-css3
+
+  select#categories
+    margin-top: 8px
+
+  li.active.first
+    @include round-corners(10px, 0, 0, 0)
+    @include enable-ie-css3
+
+  ul li.active
+    background-color: #FFF
+
+  ul li
+    float: left
+
+    a
+      display: block
+      padding: 10px 15px
+
+
+div#user-navigation
+  float: right
+  margin: 25px 0
+
+
+div#preview
+  margin: 20px 20px 40px
+
+  p.preview-title
+    margin: 15px 0
+
+
+div#sidebar
+  float: right
+  width: 29%
+
+  h3
+    padding: 0 0 5px 0
+
+  h5
+    padding: 0 0 5px
+
+  div.block
+    margin: 0 0 20px 15px
+
+    div.content
+
+      p
+        margin: 15px 0
+
+      ul.navigation a
+        margin: 15px 0 0
+
+      ul.bullet-list li
+        margin: 5px 0
+
+        a
+          margin: 15px 0 0 20px
+
+  ul.navigation
+    list-style-type: none
+
+    li a:link, li a:visited
+      display: block
+
+    a
+      padding-left: 18px
+
+
+div#footer
+  margin: 25px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div#flash
+
+  div.message
+    margin: 20px 20px 0
+    @include round-corners(6px, 6px, 6px, 6px)
+    @include enable-ie-css3
+
+    p
+      margin: 8px
+
+  div.message.error
+    border: 1px solid #ffbbbb
+    background-color: #ffdddd
+
+  div.message.warning
+    border: 1px solid #ffff88
+    background-color: #ffffcc
+
+  div.message.info, div.message.notice
+    border: 1px solid #1fdf00
+    background-color: #bbffb6
+
+
+div#header
+  background-color: $backend-header-background-color
+  padding: 0 15px
+  @include linear-gradient($backend-header-background-color, #423D3E)
+  @include enable-ie-css3
+
+  h1
+    padding: 25px 0
+
+    a
+      display: block
+      text-indent: -6000px
+      height: 120px
+      width: 350px
+      background: url("/images/backend/bg_logo_admin.png") no-repeat
+
+
+div#wrapper
+  margin: 15px
+
+
+div.meta
+  clear: both
+  background-color: #EEE
+  margin: 0 0 10px
+  padding: 10px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+dl.list
+  display: inline-block
+
+  dd
+    float: left
+    padding: 1px 0
+    margin: 5px 0
+
+  dt
+    clear: left
+    color: #555
+    float: left
+    font-weight: bold
+    padding: 0
+    margin: 5px 0
+    width: 150px
+
+  // because of announcement image in announcement details
+  img
+    max-width: 600px
+
+
+div#avatar img
+  float: right
+  border: 1px solid #999
+
+
+div.post-image
+  float: left
+  margin: 0 $content-margin 5px 0
+
+
+div.file_icon
+  margin: 0 0 5px 165px
+
+
+.wat-cf
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  display: inline-block
+
+
+
+
+
+
+div.jqifade
+  position: absolute
+  background-color: #000
+
+
+div.jqi
+  background-color: #FFF
+  background-image: url("/images/backend/boxbar-background.png")
+  background-repeat: repeat-x
+  width: 750px
+  @include round-corners(10px, 10px, 10px, 10px)
+  @include enable-ie-css3
+
+  div.jqicontainer
+    margin: 10px 15px
+
+  div.jqiclose
+    color: #444
+    cursor: pointer
+    float: right
+    font-weight: bold
+
+  div.cg_header
+    margin: 10px 0 20px
+
+  div.cg_search_block
+    margin: 10px 0
+
+    span.title
+      float: left
+      margin: 5px 10px 5px 0
+
+  div.cg_search
+    width: 250px
+
+  div#selected
+    margin-top: 20px
+
+  div#not_selected
+    margin-bottom: 20px
+
+  div.jqibuttons
+    clear: left
+    margin: 20px 0
+
+  div.jqi button.popbutton
+    padding: 3px 10px
+    margin: 0 15px
+    background-color: #2F6073
+    background: #2F6073
+    border: solid 1px #f4f4f4
+    font-weight: bold
+    font-size: 12px
+    color: #FFF
+
+
+
+input.cg_group_name_textfield 
+  width: 20em
+
+
+.cg_user
+  width: 138px
+  float: left
+  display: inline
+  border: inherit
+  border-radius: 2px
+  margin: 9px
+  padding: 7px 0px 2px 7px	
+  vertical-align: top
+  cursor: pointer
+  background: inherit
+  color: inherit
+
+
+.cg_users .title
+  float: left
+
+
+#selected, #not_selected
+  float: left
+  min-height: 40px
+
+
+.title + .cg_user 
+  clear: left
+
+
+#selected > .cg_user
+  background: -o-linear-gradient(top,#63ABF7,#5E99CD)
+  background: -webkit-gradient(linear,left top,left bottom,from(#63ABF7),to(#5E99CD))
+  background: -moz-linear-gradient(top,#63ABF7,#5E99CD)
+  background: -o-linear-gradient(top,#63ABF7,#5E99CD)
+  color: white
+  border: 1px solid #779
+
+
+#not_selected > .cg_user 
+  background: -o-linear-gradient(top,white,#F4F4F4)
+  background: -webkit-gradient(linear,left top,left bottom,from(white),to(#F4F4F4))
+  background: -moz-linear-gradient(top,white,#F4F4F4)
+  background: -o-linear-gradient(top,white,#F4F4F4)
+  color: black
+  border: 1px solid #DDD
+  border-radius: 2px
+
+
+.cg_user:hover
+  border: 1px solid #BBB
+  -moz-box-shadow: 2px 2px 4px #999
+  -webkit-box-shadow: 2px 2px 4px #999
+  box-shadow: 2px 2px 4px #999
+  opacity: 1
+
+
+.cg_user_image
+  float: left
+  margin-right: 4px
+
+
+.cg_user_name
+  width: 68px
+
+
+.cg_users
+  clear: left
+
+
+.cg_select_all_block, .cg_search
+  float: left
+  margin-right: 10px
+
+
+.cg_deselect_all_block, .cg_blocks
+  float: left
+
+
+.cg_g_n_label
+  margin-right: 5px
+
+
+.cg_select_all_block,.cg_deselect_all_block,.cg_group_name
+  margin-bottom: 10px
+
+
+ul.token-input-list-facebook
+  width: inherit
+
+
+div.token-input-dropdown-facebook 
+  z-index: 1000
+  width: 248px
+
+
+
+
+
+
+
+
+
+// ==============
+// Social buttons
+// ==============
+
+
+div.social-buttons
+  float: right
+  margin: 0 0 5px
+
+  div.addthis_toolbox
+    display: inline
+
+
+// =======
+// Buttons
+// =======
+
+
+button, a.button, input.button
+  background-color: $button-gradient-end-color // graceful degrade for Opera
+  border: 1px solid #AAA
+  cursor: pointer
+  float: left
+  @include linear-gradient($button-gradient-start-color, $button-gradient-end-color)
+  @include round-corners(4px, 4px, 4px, 4px)
+  @include enable-ie-css3
+
+
+button:active, a.button:active, input.button:active
+  @include linear-gradient($button-gradient-end-color, $button-gradient-start-color)
+  @include enable-ie-css3
+
+
+a.button
+  padding: 6px 10px
+
+
+input.button
+  padding: 5px 10px !important
+
+
+button
+  padding: 5px 10px
+
+
+ul.buttons
+  display: block
+  height: 30px
+  margin: $content-margin 0
+
+  a
+    margin: 0 10px 0 0
+
+
+*:first-child + html input[type]
+  padding: 2px 10px 3px // IE7
+
+
+a.google_ico, a.yahoo_ico
+  margin: 0 0 15px 0
+  width: 90%
+
+
+// the following rules are necessary due to the usage of active-scaffold and will be removed later
+
+div.active-scaffold tr.record
+  background-color: #FFF
+
+
+// Hides from IE-MAC
+
+* html .wat-cf
+  height: 1%
+
+.wat-cf
+  display: block

@@ -1,0 +1,145 @@
+body
+  background-color: #FFF
+  background-image: image_url("pattern.png")
+  background-repeat: repeat
+  overflow-x: hidden
+
+
+div#container
+  background-image: image_url("pattern_destruction.png")
+  background-repeat: repeat-x
+  background-position: 0 87px
+
+
+div#header
+  border-top: 6px solid $default-color
+  height: 100px
+  margin-bottom: 50px
+  @include linear-gradient(#FAF9FA, #EEEEED)
+  @include enable-ie-css3
+
+  span.site-title
+    float: left
+    margin-left: 110px
+    margin-top: 105px
+ 
+  span.options
+    background-color: #DDD
+    float: right
+    padding: 10px 15px
+    @include round-corners(0, 0, 4px, 4px)
+    @include enable-ie-css3
+
+  div#logo
+    position: absolute
+    background-image: url("/logo.png")
+    margin: 33px 0 0
+    height: 90px
+    width: 264px
+
+  div#menu
+    height: 45px
+    margin-top: 60px
+    position: absolute
+    right: 0
+
+    ul li
+      display: inline-block
+      margin: 0 14px
+
+      a
+        padding: 0 0 14px
+
+
+div.wrapper
+  margin: auto
+  position: relative
+  width: 960px
+
+
+div#content
+  background-color: $frontend-background-color
+  margin-bottom: 80px
+  @include box-shadow(0, 0, 6px, #AAA)
+  @include enable-ie-css3
+
+
+div#right-sidebar
+
+  h2
+    background-color: $default-color
+    padding: 10px 14px
+
+  li
+    list-style: square
+    margin-left: 30px
+    margin-bottom: 10px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div#footer
+  border-top: 3px solid #D5D5D5
+  border-bottom: 6px solid $default-color
+  margin: 0
+  padding: 40px 0
+  @include linear-gradient(#EEEEED, #FAF9FA)
+  @include enable-ie-css3
+
+
+// =============
+// Announcements
+// =============
+
+
+div#announcements
+  border: 1px solid #444
+  height: 200px
+  overflow: hidden
+  margin: 0 auto 50px
+  position: relative
+  width: 960px
+  z-index: 1
+
+  a
+    display: block
+     
+  a:hover
+    border: none
+
+
+div.announcement-tail
+  display: none
+
+
+div#announcement-numbers
+  background: image_url("dark_transparency.png")
+  cursor: default
+  padding: 12px
+  position: absolute
+  right: 0
+  @include round-corners(0, 0, 0, 6px)
+  @include enable-ie-css3
+
+  a
+    display: inline-block
+
+
+div.announcement img
+  height: 200px
+  width: 960px
+
+
+div.announcement-text
+  background: image_url("dark_transparency.png")
+  bottom: 0
+  padding: 14px
+  position: absolute
+  right: 0
+  width: 300px
+  @include round-corners(6px, 0, 0, 0)
+  @include enable-ie-css3
+
+  p.title
+    padding: 0 0 15px
