@@ -1,0 +1,11 @@
+= form_for @location do |form|
+  = form.label :name
+  = form.text_field :name
+ 
+  p
+   = form.submit
+
+h2 Locations
+ul
+- @locations.each do |location|
+  li = location.name  
