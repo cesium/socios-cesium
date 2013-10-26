@@ -1,0 +1,453 @@
+body
+  color: $text-color
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif
+  font-size: 13px
+
+
+a, a:active, a:link, a:visited
+  color: $text-color
+  text-decoration: none
+
+
+h2.title
+  font-size: 24px
+  margin: 0 0 15px
+
+  a:hover
+    color: $default-color
+
+
+hr
+  background-color: #DDD
+  border: none
+  clear: left
+  height: 1px
+  margin: $content-margin 0
+
+
+p.inline-errors
+  font-size: 11px
+
+
+ul.list li
+  margin: $content-margin 0
+
+
+dl.list
+  display: inline-block
+
+  dd
+    float: left
+    padding: 1px 0
+    margin: 5px 0
+
+  dt
+    clear: left
+    color: #555
+    float: left
+    font-weight: bold
+    padding: 0
+    margin: 5px 0
+    width: 150px
+
+
+div#open-id
+  margin: 30px 0
+
+  span
+    font-size: 16px
+    padding-bottom: 1.2em
+
+  ul li
+    display: inline-block
+    margin: 20px 30px 10px 0
+    width: 100px
+
+
+div#main
+  float: left
+  margin: 20px
+  min-height: 300px
+  width: 700px
+
+
+div#right-sidebar
+  display: inline-block
+  margin: 20px 20px 20px 0
+  width: 200px
+
+  div.block
+    min-height: 120px
+
+  div#organization a
+    border-bottom: none
+
+  div#tag-menu
+
+    ul
+      margin: 5px 0
+
+    .selected
+      font-weight: bold
+
+
+h3.archives-month-title
+  font-size: 20px
+  margin: 0 0 15px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div#archives
+  float: right
+  margin: 0 10px
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div.pagination
+  font-family: Verdana
+  font-size: 13px
+  margin: 0 10px
+
+  .prev_page, .next_page
+    font-weight: bold
+
+  a.prev_page:hover, a.next_page:hover, a[rel="prev start"]:hover, a[rel="prev"]:hover, a[rel="next"]:hover
+    color: $default-color
+
+
+
+
+
+
+
+
+
+ul.archives-month
+  margin: 0 0 20px 30px
+
+  li
+    color: $default-color
+    list-style: disc
+    margin: 0 0 5px
+
+    a:hover
+      border-bottom: 2px solid $default-color
+
+
+div#tag-search-bar
+  margin: 0 0 $content-margin
+
+  div#tags
+    margin: 10px
+
+
+div#tag-search-bar
+  font-size: 14px
+
+  span#tagged-with
+    font-size: 16px
+
+  span#clear-link
+    font-size: 12px
+
+
+div.meta li
+  line-height: 18px
+
+
+div#flash div.message p
+  color: #FFF
+  font-size: 20px
+  font-weight: bold
+
+
+div#archives
+  font-size: 14px
+
+
+ul.archives-month
+  font-size: 14px
+
+
+
+
+
+
+
+
+// =========
+// Flash bar
+// =========
+
+
+div#flash
+  background-image: url("/images/dark_transparency.png")
+  border-top: 1px solid #000
+  bottom: 0
+  left: 0
+  padding: 15px 0
+  position: fixed
+  width: 100%
+  z-index: 2
+
+  div.message
+    margin: 0 0 0 30px
+
+    p
+      margin: 0 70px
+      padding: 20px
+
+  div.message.error
+    background: url("/images/flash/error.png") no-repeat 0 50%
+
+  div.message.warning
+    background: url("/images/flash/warning.png") no-repeat 0 50%
+
+  div.message.info, div.message.notice
+    background: url("/images/flash/notice.png") no-repeat 0 50%
+
+
+// ======
+// Events
+// ======
+
+
+div.event-body
+  margin: 0 10px 30px
+
+
+form.event span.title
+  margin-right: 15px
+
+
+p#event-message
+  font-size: 1.2em
+  margin: 20px 0
+
+
+p#event-total-price
+  font-weight: bold
+  margin: 20px 0
+
+
+p#total-price
+  font-size: 15px
+  margin-bottom: 20px
+
+
+// =====
+// Posts
+// =====
+
+
+div.post
+  margin: 0 0 20px
+
+  div.textile-body
+    margin: 0 10px
+
+
+div.post-image
+  float: left
+  margin: 0 15px 15px 0
+
+  a
+    border: none
+
+
+div.meta
+  clear: both
+  background-color: #EEE
+  margin: 0 10px
+  padding: 10px
+  text-align: right
+
+  a:hover
+    border-bottom: 2px solid $default-color
+
+
+div.activities
+  margin-bottom: 30px
+
+  h3
+    font-size: 15px
+    margin-bottom: 10px
+
+  ul.activity-list li
+    margin: 5px 0
+
+
+div.attachment
+  margin: 20px 0 30px
+
+  span.attachment_download
+    display: block
+    margin-top: 10px
+
+
+// ========
+// Comments
+// ========
+
+
+div.avatar
+  float: left
+  margin-right: 20px
+
+  img
+    background-color: #FFF
+    padding: 4px
+
+
+span.comment-meta
+  clear: both
+  display: block
+
+
+div#new-comment
+
+  form
+    margin: 0 10px
+
+    textarea
+      height: 100px
+      width: 80%
+
+
+ol#comment-list
+  margin: 0 10px 20px
+
+  p
+    padding: $content-margin 0 0 72px
+
+
+ol#comment-list a.author
+  font-weight: bold
+
+ol#comment-list span.comment-meta
+  text-align: right
+
+
+
+
+
+// Anounncements
+
+
+div.announcement-text
+  color: #FFF
+
+  p.title
+    font-size: 14px
+    font-weight: bold
+
+  p.body
+    text-align: justify
+
+
+div#announcement-numbers
+  color: #FFF
+  text-align: justify
+
+  a, span
+    color: #FFF
+    text-align: justify
+
+  a:hover, span:hover
+    color: $default-color
+
+
+
+
+
+
+// =======
+// Buttons
+// =======
+
+
+button, a.button, input.button
+  background-color: $button-gradient-end-color // graceful degrade for Opera
+  border: 1px solid #AAA
+  cursor: pointer
+  float: left
+  @include linear-gradient($button-gradient-start-color, $button-gradient-end-color)
+  @include round-corners(4px, 4px, 4px, 4px)
+  @include enable-ie-css3
+
+
+button:active, a.button:active, input.button:active
+  @include linear-gradient($button-gradient-end-color, $button-gradient-start-color)
+  @include enable-ie-css3
+
+
+a.button
+  padding: 6px 10px
+
+
+input.button
+  padding: 5px 10px !important
+
+
+button
+  padding: 5px 10px
+
+
+ul.buttons
+  display: inline-block
+  margin: $content-margin 0 0
+
+  a
+    margin: 0 10px 0 0
+
+
+button, a.button
+  text-decoration: none
+
+
+button, input.button
+  line-height: 16px
+
+
+button, a.button, input.button
+  color: #2E2E2E
+  font-size: 12px !important
+  font-weight: bold !important
+  text-align: center
+
+
+button.positive:hover, a.positive:hover, input.positive:hover
+  color: $text-color-positive !important
+
+
+button.negative:hover, a.negative:hover, input.negative:hover
+  color: $text-color-negative !important
+
+
+
+
+
+
+
+
+
+*:first-child + html input[type]
+  padding: 2px 10px 3px
+  // IE7
+
+
+// Self-clearing floats and IE hacks
+
+.selfclear
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  display: inline-block // IE 7
+  display:  block

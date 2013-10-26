@@ -1,0 +1,7 @@
+---
+  theme: brickstorm
+  default_locale: pt
+  title: CeSIUM
+  site_name: CeSIUM
+  site_header: Centro de Estudantes de Engenharia Informática da Universidade do Minho
+  force_locale: "true"
