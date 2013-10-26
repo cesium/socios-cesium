@@ -1,0 +1,13 @@
+h1 Membros
+table
+  tr 
+    th Nome
+    th Número de Sócio
+    th Email
+    th Telemóvel
+  - @members.each do |member|
+    tr
+      td = link_to member.name, member_path(member)
+      td = member.member_number
+      td = member.email
+      td = member.phone
