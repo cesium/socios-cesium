@@ -1,0 +1,40 @@
+= form_for @member do |form|
+  p
+    = form.label :name
+    = form.text_field :name
+
+  p
+    = form.label :member_number
+    = form.text_field :member_number
+ 
+  p
+    = form.label :email
+    = form.text_field :email
+
+  p
+    = form.label :phone
+    = form.text_field :phone
+
+  p
+    = form.label :birthday
+    = form.date_field :birthday
+
+  p
+    = form.label :paid
+    = form.check_box :paid
+
+  p
+    = form.label :student_number
+    = form.text_field :student_number
+
+  p
+    = form.label :location_id
+
+  p
+    = form.label :course_id
+
+  p
+    = form.label :responsible_id
+
+  p
+   = form.submit
