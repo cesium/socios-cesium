@@ -1,2 +1,5 @@
 p = @location.id
 p = @location.name
+
+p
+  = link_to "Edit", edit_location_path(@location.id)
