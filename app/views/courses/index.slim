@@ -1,14 +1,14 @@
-h2.title Localizações
+h2.title Cursos
 
 table#example.table.table-condensed.table-hover
   thead
     tr 
-      th Localização
+      th Curso
 
   tbody
-    - @locations.each do |location|
+    - @courses.each do |course|
       tr
-        td = link_to location.name, location_path(location)
+        td = link_to course.name, course_path(course)
 
 javascript:
   $(document).ready(function(){
