@@ -12,6 +12,8 @@ gem 'slim'
 gem "therubyracer"
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
+gem "font-awesome-rails"
+gem 'bootstrap-datepicker-rails'
 
 group :doc do
   gem 'sdoc', require: false

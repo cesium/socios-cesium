@@ -1,8 +1,0 @@
-= form_for @course do |form|
-  = form.label :name
-  = form.text_field :name
- 
-  p
-   = form.submit
-
-= button_to "Delete", course_path(@course.id), method: :delete

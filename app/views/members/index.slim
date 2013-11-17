@@ -3,22 +3,33 @@ h2.title Membros
 table#tmembers.table.table-condensed.table-hover
   thead
     tr 
-      th Nº de Sócio
+      th Nr Sócio
       th Nome
+      th Nr Aluno
       th Curso
-      th Nº Mecanográfico
       th Email
       th Pago
+      th Opções
 
   tbody
     - @members.each do |member|
       tr
         td = link_to member.member_number, member_path(member)
         td = member.name
-        td = nil
         td = member.student_number
+        td = member.course.acronym
         td = member.email
-        td = member.paid?
+        td = member.paid
+        td.options
+          = link_to member
+            button.btn.btn-info.btn-small
+              i.icon-user
+          = link_to edit_member_path(member)
+            button.btn.btn-warning.btn-small
+              i.icon-edit
+          = link_to member, method: :delete, data: { confirm: 'Tem a certeza que quer apagar definitivamente da base de dados?' }
+            button.btn.btn-danger.btn-small
+              i.icon-trash
 
 javascript:
   $(document).ready(function(){

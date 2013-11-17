@@ -1,6 +1,9 @@
 class Location < ActiveRecord::Base
   has_many :members
-  #belongs_to :members
+  
+  validates :name, presence: true, uniqueness: true
 
-  validates :name, presence: true
+  def to_s
+    name
+  end
 end
